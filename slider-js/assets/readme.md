@@ -1,0 +1,1 @@
+// Zgjidhja e  detyres se shpise per slider me javascript
