@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+#service{
+    width: 100%;
+    height: 100%;;
+    display: flex;
+}
+
+.slide{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+}
+
+.slide::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.slide-1{
+    background-image:url('https://f.i.uol.com.br/fotografia/2016/03/11/594619-970x600-1.jpeg') ;
+}
+
+.slide-2{
+    background-image: url('https://f.i.uol.com.br/fotografia/2016/03/11/594620-970x600-1.jpeg');
+}
+
+.slide-3{
+    background-image:url('https://f.i.uol.com.br/fotografia/2016/03/11/594617-970x600-1.jpeg');
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    color: #fff;
+    padding: 0  20%;
+}
+
+.slide-content h1{
+    font-family: sans-serif;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.slide-content p{
+    font-family: "Lato" serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+
+.slide-content button{
+    font-family: "Roboto" serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+
+#previous{
+    position: absolute;
+    left: 8px;
+    bottom: 50%;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 6px;
+    background: none;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+
+#next{
+    position: absolute;
+    right: 1%;
+    bottom: 50%;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 6px;
+    background: none;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+
+.fa-arrow-left{
+    padding-right: 3px;
+}
