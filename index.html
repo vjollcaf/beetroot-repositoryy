@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOVIES</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,800&family=Raleway:wght@700&family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>  
+    <main class="container">
+      <div class="card">
+        <h1 class="card__title">SEARCH MOVIES</h1>
+        <form action="card__form" name="cardForm">
+          <input type="text" name="s" placeholder="Godfather" value="Godfather">
+          <select name="type">
+            <option value="movie" selected="">Movie</option>
+            <option value="series">Series</option>
+            <option value="episode">Episode</option>
+        </select>
+        <button class="button btn--search" type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="card__details"></div>
+
+      <div class="card__output"></div>
+  
+      <div class="pagination">
+          <button class="pagination__more">More <span class="pagination__count"></span></button>
+          <button class="button pagination__clear-btn clear-btn">Clear List</button>
+      </div>
+    </main>
+
+</body>
+<script src="../assets/js/main.js"></script>
+</html>

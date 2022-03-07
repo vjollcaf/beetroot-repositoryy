@@ -1,0 +1,12 @@
+.container{
+    width: 1170px;
+    margin: 100px auto 80px;
+
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
